@@ -9,29 +9,19 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended to check this file into your version control system
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20140121071631) do
-=======
 ActiveRecord::Schema.define(:version => 20140123020836) do
->>>>>>> modeling-users2
+
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-<<<<<<< HEAD
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
 
-=======
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.string   "password_digest"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-
->>>>>>> modeling-users2
 end
